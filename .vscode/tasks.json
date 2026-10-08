@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Playwright: run all tests", "type": "npm", "script": "test", "group": { "kind": "test", "isDefault": true }, "problemMatcher": [] },
+    { "label": "Playwright: run in Chromium", "type": "npm", "script": "test:chromium", "group": "test", "problemMatcher": [] },
+    { "label": "Playwright: UI mode", "type": "npm", "script": "test:ui", "group": "test", "problemMatcher": [] },
+    { "label": "Playwright: show report", "type": "npm", "script": "report", "problemMatcher": [] },
+    { "label": "Playwright: codegen", "type": "npm", "script": "codegen", "problemMatcher": [] }
+  ]
+}

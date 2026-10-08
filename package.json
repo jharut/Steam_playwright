@@ -1,0 +1,21 @@
+{
+  "name": "steam-playwright",
+  "version": "1.0.0",
+  "description": "Playwright end-to-end tests (JavaScript)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:slowmo": "SLOW_MO=${SLOW_MO:-3000} playwright test --project=chromium --headed --workers=1",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [],
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4"
+  }
+}
